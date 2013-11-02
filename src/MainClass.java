@@ -5,7 +5,7 @@ public class MainClass {
 	public static void main(String args[])
 	{
 		int firstNumber = Input.getNumber();
-		int secondNumber = 2;
+		int secondNumber = Input.getNumber();
 		char operator = Input.getOperator();
 		int answer = 0;
 		
