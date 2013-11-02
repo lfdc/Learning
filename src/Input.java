@@ -22,7 +22,33 @@ public class Input {
 	
 	public static char getOperator()
 	{
-		return '-';
+		while(true)
+		{
+			try
+			{
+				System.out.println("Enter operator");
+				String charString = getInput();
+				char character;
+				if(charString.length() != 1)
+				{
+					continue;
+				}
+				
+				character = charString.charAt(0);
+				
+				switch(character)
+				{
+				case '+':
+				case '-':
+				case '*':
+				case '/':
+					return character;
+				}
+				
+				continue;
+			}
+			catch(Exception e){}
+		}
 	}
 	
 	private static String getInput()
