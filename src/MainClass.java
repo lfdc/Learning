@@ -5,13 +5,31 @@ public class MainClass {
 
 	public static void main(String args[])
 	{
-		Scanner scanner = new Scanner(System.in);
+		int firstNumber = Input.getNumber();
+		int secondNumber = 2;
+		char operator = Input.getOperator();
+		int answer = 0;
 		
-		System.out.println("Enter your name");
 		
-		String name = scanner.nextLine();
 		
-		System.out.println("Hello " + name);
+		if (operator == '*')
+		{
+			answer = firstNumber * secondNumber;
+		}
+		if (operator == '-')
+		{
+			answer = firstNumber - secondNumber;
+		}
+		if (operator == '/')
+		{
+			answer = firstNumber / secondNumber;
+		}
+		if (operator == '+')
+		{
+			answer = firstNumber + secondNumber;
+		}
+		
+		System.out.println(answer);
 	}
 	
 }
