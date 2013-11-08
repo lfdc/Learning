@@ -19,7 +19,7 @@ public class Address {
 		 * using setNumber(), setStreet(), and setStreetType()
 		 */
 		setNumber(number);
-		setStreet(streetType);
+		setStreet(street);
 		setStreetType(streetType);
 	}
 	
