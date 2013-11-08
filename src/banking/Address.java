@@ -18,6 +18,9 @@ public class Address {
 		 * TODO set number, street, and streetType
 		 * using setNumber(), setStreet(), and setStreetType()
 		 */
+		setNumber(number);
+		setStreet(streetType);
+		setStreetType(streetType);
 	}
 	
 	/**
@@ -79,6 +82,7 @@ public class Address {
 		 * streetType is "ave". Then address should be
 		 * "12 Main ave"
 		 */
+		address = getNumber() + getStreet() + getStreetType(); 
 		return address;
 	}
 }
