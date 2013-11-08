@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class FindAverage {
 
 	public static void main(String args[]) {
-		double[] marks = { Input.getNumber(), Input.getNumber(),
-				Input.getNumber(), Input.getNumber() };
+		double[] marks = { Input.getDouble(), Input.getDouble(),
+				Input.getDouble(), Input.getDouble() };
 
 		double average = 0;
 

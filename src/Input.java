@@ -3,25 +3,7 @@ import java.util.Scanner;
 
 public class Input {
 
-	@Deprecated
-	public static int getNumber()
-	{
-		while(true)
-		{
-			try
-			{
-				System.out.println("Enter number");
-				String numString = getNextWord();
-				
-				int num = Integer.parseInt(numString);
-				
-				return num;
-			}
-			catch(Exception e){}
-		}
-	}
-	
-	public int getInteger()
+	public static int getInteger()
 	{
 		while(true)
 		{
@@ -37,13 +19,13 @@ public class Input {
 		}
 	}
 	
-	public int getInteger(String message)
+	public static int getInteger(String message)
 	{
 		System.out.println(message);
 		return getInteger();
 	}
 	
-	public double getDouble()
+	public static double getDouble()
 	{
 		while(true)
 		{
@@ -57,13 +39,13 @@ public class Input {
 		}
 	}
 	
-	public double getDouble(String message)
+	public static double getDouble(String message)
 	{
 		System.out.println(message);
 		return getDouble();
 	}
 	
-	public char getCharacter()
+	public static char getCharacter()
 	{
 		while(true)
 		{
@@ -76,18 +58,18 @@ public class Input {
 		}
 	}
 	
-	public char getCharacter(String message)
+	public static char getCharacter(String message)
 	{
 		System.out.println(message);
 		return getCharacter();
 	}
 	
-	public String getString()
+	public static String getString()
 	{
 		return getNextLine();
 	}
 	
-	public String getString(String message)
+	public static String getString(String message)
 	{
 		System.out.println(message);
 		return getString();
